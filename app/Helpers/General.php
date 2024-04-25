@@ -15,4 +15,13 @@ class General
             return false;
         }
     }
+
+public static function validateString($inputString)
+{
+    if (ctype_alpha($inputString)) {
+        return true;
+    }
+    return false;
+}
+
 }
